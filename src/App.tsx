@@ -3,6 +3,15 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FiGithub, FiLinkedin, FiMail, FiArrowRight, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import './App.css';
 
+// Import assets from assets folder
+import profileImage from './assets/images/profile.png';
+import leafPredictionImage from './assets/images/leaf-prediction.png';
+import racingGameImage from './assets/images/racing-game.png';
+import waterQualityImage from './assets/images/water-quality.png';
+import youtubePredictionImage from './assets/images/youtube-prediction.png';
+import movieRecommendationImage from './assets/images/movie-recommendation.png';
+import aslRecognitionImage from './assets/images/asl-recognition.png';
+
 // Type definitions
 interface Section {
   id: string;
@@ -35,7 +44,7 @@ const App: React.FC = () => {
       id: 1,
       title: "AI Leaf Disease Prediction",
       description: "Machine learning model that identifies plant diseases from leaf images using computer vision and deep learning techniques.",
-      image: "https://private-user-images.githubusercontent.com/143238961/496492753-32b70911-296e-4102-8400-60c2d16b2f9d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjM3NDYzOTQsIm5iZiI6MTc2Mzc0NjA5NCwicGF0aCI6Ii8xNDMyMzg5NjEvNDk2NDkyNzUzLTMyYjcwOTExLTI5NmUtNDEwMi04NDAwLTYwYzJkMTZiMmY5ZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTEyMVQxNzI4MTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00MjM3MTViNzhkYmM1Yjk0YjNjNmFhZmE1NGZmNTg3ZjhmOGQ2ODU1MjY2ODc1OGZlMzYwMzg3MjlkMzgzOWNiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.YvfURgkd_0ODpHohKY1FHsKReOUN7JCYOOR8iWQwFhY",
+      image: leafPredictionImage,
       github: "https://github.com/evanfhartono/AI_model_leaf_prediction",
       fallback: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80"
     },
@@ -43,7 +52,7 @@ const App: React.FC = () => {
       id: 2,
       title: "Racing Game Web",
       description: "Interactive browser-based racing game built with JavaScript, featuring real-time physics and multiplayer capabilities.",
-      image: "https://private-user-images.githubusercontent.com/143238961/496480079-ee0daf8b-078e-4432-8ccc-8df8cfceab8b.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjM3NDYzOTUsIm5iZiI6MTc2Mzc0NjA5NSwicGF0aCI6Ii8xNDMyMzg5NjEvNDk2NDgwMDc5LWVlMGRhZjhiLTA3OGUtNDQzMi04Y2NjLThkZjhjZmNlYWI4Yi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTEyMVQxNzI4MTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yNmY1ZmFkNGU1MTRlZjU1NTljODYzMDA1NjZlMDc2NTkzOWIyZTE3NTlhMzBiZWI5Zjg0Y2MyNDhmMDU0YTdiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.pk_9yS78kaVWN-WSSr8qTY9YJt0hGAlcPOP9now_JYA",
+      image: racingGameImage,
       github: "https://github.com/evanfhartono/racing-game-web",
       fallback: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
     },
@@ -51,7 +60,7 @@ const App: React.FC = () => {
       id: 3,
       title: "WAQU Water Quality App",
       description: "Mobile application for monitoring and analyzing water quality parameters with real-time data visualization.",
-      image: "https://private-user-images.githubusercontent.com/143238961/496498878-7ca670d2-6efe-4552-862d-21c8e4833677.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjM3NDYzOTUsIm5iZiI6MTc2Mzc0NjA5NSwicGF0aCI6Ii8xNDMyMzg5NjEvNDk2NDk4ODc4LTdjYTY3MGQyLTZlZmUtNDU1Mi04NjJkLTIxYzhlNDgzMzY3Ny5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTEyMVQxNzI4MTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01OGIwYTgxNzJhYmRkZTk4YjZhYzI3YTQyZjc3ZjAxNzZjMmY2ZGZmNmQyZGY1MmZhODBmNmQ4YmExZTQ2MjViJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.bYSTrWmPqv2_srw4j3VxEnMRokxulAN18MhFEg3cUm0",
+      image: waterQualityImage,
       github: "https://github.com/evanfhartono/waqu-water-quality-app",
       fallback: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1115&q=80"
     },
@@ -59,7 +68,7 @@ const App: React.FC = () => {
       id: 4,
       title: "YouTube Views Prediction",
       description: "Machine learning model that predicts YouTube video views based on various features using regression algorithms.",
-      image: "https://private-user-images.githubusercontent.com/143238961/496489620-5b45f087-a73e-4f15-8a69-d8eb3d6a9c9f.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjM3NDYzOTgsIm5iZiI6MTc2Mzc0NjA5OCwicGF0aCI6Ii8xNDMyMzg5NjEvNDk2NDg5NjIwLTViNDVmMDg3LWE3M2UtNGYxNS04YTY5LWQ4ZWIzZDZhOWM5Zi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTEyMVQxNzI4MThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hMzIwYzhmMzBkOTYwYWQ2M2UxNDc0OGQ4MDVjZTBlYWNkNDliM2YxY2I3MjhiYzEzN2RmN2U0NDU2ZWRiM2ZiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.bAD9cnha-fePh68kmB9sl_QHeHTTI76CjkO7VpCSPgM",
+      image: youtubePredictionImage,
       github: "https://github.com/evanfhartono/youtube_views_prediction",
       fallback: "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=1064&q=80"
     },
@@ -67,7 +76,7 @@ const App: React.FC = () => {
       id: 5,
       title: "Movie Recommendation System",
       description: "Content-based movie recommendation engine using TF-IDF and cosine similarity for personalized suggestions.",
-      image: "https://private-user-images.githubusercontent.com/143238961/517501531-559daebb-5753-4c28-843a-173bf318a432.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjM3NDYzOTcsIm5iZiI6MTc2Mzc0NjA5NywicGF0aCI6Ii8xNDMyMzg5NjEvNTE3NTAxNTMxLTU1OWRhZWJiLTU3NTMtNGMyOC04NDNhLTE3M2JmMzE4YTQzMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTEyMVQxNzI4MTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mNTAxMmZmNzhlNzEyODA3ZjM5ZWY4YTFkZmVkNGNmMDY4MmI3ZTAzZmU1NGNlYTY2ZWEzODQ3MDlkMjM5ZWJhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.7jkeOQUekMQasxM7unjXSyVruRebiX9oi9nSrdZvXl8",
+      image: movieRecommendationImage,
       github: "https://github.com/evanfhartono/tfidf_cosinesim_moview_recommendation_program",
       fallback: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
     },
@@ -75,7 +84,7 @@ const App: React.FC = () => {
       id: 6,
       title: "ASL Hand Gesture Recognition",
       description: "Computer vision system that recognizes American Sign Language gestures using deep learning and image processing.",
-      image: "https://private-user-images.githubusercontent.com/143238961/517500062-dca16801-3158-4e14-9b07-662b273bafbf.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjM3NDY0MDIsIm5iZiI6MTc2Mzc0NjEwMiwicGF0aCI6Ii8xNDMyMzg5NjEvNTE3NTAwMDYyLWRjYTE2ODAxLTMxNTgtNGUxNC05YjA3LTY2MmIyNzNiYWZiZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTEyMVQxNzI4MjJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kYmYzYmNlMDY1YThlMDFkMDRhNDhiNThlZmRiZTcyZGQ0NTQ4ZWM2ZWU0ODMzYTExZjcyZjFiOTI3NGQ0MjgwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.0Cre1xgys9S_Qy-qQC7c849_wASr5uFU_rEByUcW-Ug",
+      image: aslRecognitionImage,
       github: "https://github.com/evanfhartono/asl_hand_gesture_recognition",
       fallback: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80"
     }
@@ -282,12 +291,12 @@ const App: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <div className="profile-image-container">
+              <div className="https://private-user-images.githubusercontent.com/143238961/517509592-786dcf21-fbcf-4d27-8158-fbf9aa3f0fbc.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjM3NTEyOTksIm5iZiI6MTc2Mzc1MDk5OSwicGF0aCI6Ii8xNDMyMzg5NjEvNTE3NTA5NTkyLTc4NmRjZjIxLWZiY2YtNGQyNy04MTU4LWZiZjlhYTNmMGZiYy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTEyMVQxODQ5NTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wYmU0Y2QyZDIxNTg4MTkxMDA1NWIzNmZkN2VlNDllYTdiNTgwM2NkN2FkN2QxZTIxZDI0Mzk5MmQxNjFhZTI2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.YIzF2FUaSRZcQPOEmHCZjBr9p-E6DaTBiLw73Y1_c3s">
                 <img 
-                  src="https://private-user-images.githubusercontent.com/143238961/517509592-786dcf21-fbcf-4d27-8158-fbf9aa3f0fbc.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjM3NDYwODIsIm5iZiI6MTc2Mzc0NTc4MiwicGF0aCI6Ii8xNDMyMzg5NjEvNTE3NTA5NTkyLTc4NmRjZjIxLWZiY2YtNGQyNy04MTU4LWZiZjlhYTNmMGZiYy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTEyMVQxNzIzMDJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xMWQ5MGMxODZhYmY5ZTE1MjUwYWE5N2YwOGRiYWQwNGZlNGZjZTk4N2JkNzMxYTY2MTk4YjRhMWFjNDRjMmY3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.7PAqY7I_yy1Nj_s687AlMhS8q3Z4i0BEiMqe1Yvi6WM" 
+                  src={profileImage}
                   alt="Evan F Hartono" 
                   className="profile-image"
-                  onError={(e) => handleImageError(e, 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=774&q=80')}
+                  onError={(e) => handleImageError(e, '')}
                 />
                 <div className="image-glow"></div>
               </div>
