@@ -43,7 +43,7 @@ const App: React.FC = () => {
     {
       id: 1,
       title: "AI Leaf Disease Prediction",
-      description: "Machine learning model that identifies plant diseases from leaf images using computer vision and deep learning techniques.",
+      description: "This project implements a Convolutional Neural Network (CNN) model to classify 11 plant species based on their leaf images. The system is deployed with FastAPI backend and a simple HTML interface, allowing users to upload an image and get predictions in real time.",
       image: leafPredictionImage,
       github: "https://github.com/evanfhartono/AI_model_leaf_prediction",
       fallback: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80"
@@ -51,7 +51,7 @@ const App: React.FC = () => {
     {
       id: 2,
       title: "Racing Game Web",
-      description: "Interactive browser-based racing game built with JavaScript, featuring real-time physics and multiplayer capabilities.",
+      description: "A simple browser-based racing game built with HTML, CSS, and JavaScript. This project demonstrates fundamental web development concepts on the web such as animations, user interactions, and responsive design.",
       image: racingGameImage,
       github: "https://github.com/evanfhartono/racing-game-web",
       fallback: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
@@ -59,7 +59,7 @@ const App: React.FC = () => {
     {
       id: 3,
       title: "WAQU Water Quality App",
-      description: "Mobile application for monitoring and analyzing water quality parameters with real-time data visualization.",
+      description: "WaQu (Water Quality Map) is a mobile application built with React Native + Expo that helps users predict and map water quality in real-time. The app leverages AI prediction models and smartphone cameras to assess water conditions and visualize them on an interactive map.",
       image: waterQualityImage,
       github: "https://github.com/evanfhartono/waqu-water-quality-app",
       fallback: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1115&q=80"
@@ -75,7 +75,7 @@ const App: React.FC = () => {
     {
       id: 5,
       title: "Movie Recommendation System",
-      description: "Content-based movie recommendation engine using TF-IDF and cosine similarity for personalized suggestions.",
+      description: "The application allows users to select a movie from a dropdown menu and receive a list of similar movies based on content-based filtering. It also includes a Jupyter notebook for evaluating intra-list similarity (ILS) of recommendations.",
       image: movieRecommendationImage,
       github: "https://github.com/evanfhartono/tfidf_cosinesim_moview_recommendation_program",
       fallback: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
@@ -83,7 +83,7 @@ const App: React.FC = () => {
     {
       id: 6,
       title: "ASL Hand Gesture Recognition",
-      description: "Computer vision system that recognizes American Sign Language gestures using deep learning and image processing.",
+      description: "Computer vision system that recognizes American Sign Language gestures using deep learning for predicting the landmark extracted from mediapipe.",
       image: aslRecognitionImage,
       github: "https://github.com/evanfhartono/asl_hand_gesture_recognition",
       fallback: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80"
